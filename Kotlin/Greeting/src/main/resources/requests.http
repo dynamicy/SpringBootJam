@@ -1,0 +1,22 @@
+@serverUrl = http://localhost:8080
+
+### Health Check"
+GET {{serverUrl}}/health
+Content-Type: application/json
+
+### Add User"
+POST {{serverUrl}}/api/user/add
+Content-Type: application/json
+
+{
+  "name": "chris",
+  "email": "chris@csie.io"
+}
+
+### Find All Users"
+GET {{serverUrl}}/api/users
+Content-Type: application/json
+
+### Delete User"
+DELETE {{serverUrl}}/api/user/662bdce373f2f440da5df1cf
+Content-Type: application/json
